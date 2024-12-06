@@ -1,65 +1,198 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temperature Converter Website using html, css & JavaScript</title>
-    <!-- css link -->
-    <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="portfolio.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <a href="#home" class="logo">HK.Singh</a>
 
-    <!-- box icons -->
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <i class='bx bx-menu' id="menu-icon"></i>
 
-      <!-- font awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonial</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  </head>
-  <body>
-    <div class="container">
-        <div class="temperature-converter">
-            <div class="mobile">
-              <div id="current-time"></div>
-                <div>
-                    <i class='bx bx-signal-4'></i>
-                    <i class='bx bx-wifi' ></i>
-                    <i class='bx bxs-battery' ></i>
+    <!-- Home Section -->
+
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="harsh.jpg" alt="Profile Image">
+        </div>
+        <div class="home-content">
+            <h3>Hello, Myself</h3>
+            <h1>Harsh Kumar Singh</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p> And I am studying btech from Kashi Institute of technology. </p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <a href="#" class="btn">Download CV or Resume</a>
+        </div>
+
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span> </h2>
+            <h3>I'm a <span>Frontend Developer</span></h3>
+            <p> I am passionate for web developer with a focus on creating user-friendly, visually appealing websites that deliver impactful experiences. Skilled in front-end and back-end development, dedicated to creating responsive 
+                designs and clean code, always striving to stay at the forefront of web technologies.</p>
+            <a href="#" class="btn">Read more</a>
+        </div>
+        <div class="about-img">
+            <img src="hacker.jpg" alt="">
+        </div>
+    </section>
+
+<!-- project Section -->
+    <section id="project" class="project">
+        <div class="project-content">
+            <h2 class="heading">Project</h2><br><br>
+            <h3>Project 1</h3><br><br>
+            <h2>Temperature Converter</h2>
+            <p>To use Temperature conversion click on conversion button</p>
+            <a href="temp.html">conversion</a>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="heading">My <span>Services</span> </h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code'></i>
+                <h3>Web Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis laudantium at
+                    repudiandae corporis magni libero doloremque earum porro autem, nemo quod recusandae officiis
+                    molestias.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-palette' ></i>
+                <h3>UI/UX Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis laudantium at
+                    repudiandae corporis magni libero doloremque earum porro autem, nemo quod recusandae officiis
+                    molestias.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxl-android' ></i>
+                <h3>App Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis laudantium at
+                    repudiandae corporis magni libero doloremque earum porro autem, nemo quod recusandae officiis
+                    molestias.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-box">
+            <h2 class="heading">Testimonials</h2>
+
+            <div class="wrapper">
+                <div class="testimonial-item">
+                    <img src="harsh.jpg" alt="">
+                    <h2>HK.Singh</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                        recusandae porro at?</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="hacker.jpg" alt="">
+                    <h2>Aryan Rajbhar</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                        recusandae porro at?</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="hacker.jpg" alt="">
+                    <h2>Anmol kumar</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius reiciendis consequatur officia
+                        recusandae porro at?</p>
                 </div>
             </div>
-
-            <h1 class="title">Temperature Converter</h1>
-
-            <div class="result">
-              <span class="result-heading">Result</span>
-              <h2 class="celsius-value" id="celsius"></h2>
-            </div>
-
-            <!-- input field -->
-            <div class="degree-type">
-                <!-- for degrees -->
-              <div class="degree-field">
-                <label for="degree">Degrees</label>
-                <input type="number" name="degree" id="degree" />
-              </div>
-
-              <!-- for option selection -->
-              <div class="temp-field">
-                <label for="temp-type">Type</label>
-                <select name="temperatures" id="temp-type" autocomplete="on">
-                  <option id="fahrenheit" value="fahrenheit">Fahrenheit To celsius</option>
-                  <option id="celsius" value="celsius">Celsius To Fahrenheit</option>
-                  <option id="kelvin"value="kelvin">Celsius To Kelvin</option>
-                  <option id="celsius2"value="celsius2">Kelvin To Celsius</option>
-                  <option id="degree1"value="degree1">Fahrenheit To Kelvin</option>
-                  <option id="degree2"value="degree2">KelvinTo Fahrenheit</option>
-                </select>
-              </div>
-            </div>
-            <button id="convert-btn">Convert</button>
-            
         </div>
-      </div>
-    <!-- script tags -->
-    <script src="app.js"></script>
-  </body>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+
+        <p class="copyright">
+            © Harsh Kumar Singh - All Rights Reserved
+        </p>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="portscript.js"></script>
+</body>
 </html>
